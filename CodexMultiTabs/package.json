@@ -1,0 +1,46 @@
+{
+  "name": "codex-multi-tabs",
+  "displayName": "Codex Multi Tabs (Local)",
+  "description": "Open separate Codex chat panels beside each other in one VS Code window.",
+  "version": "0.1.0",
+  "publisher": "local",
+  "engines": { "vscode": "^1.100.0" },
+  "categories": ["Other"],
+  "main": "./extension.js",
+  "activationEvents": [
+    "onCommand:codexMultiTabs.newChat",
+    "onCommand:codexMultiTabs.newChatBeside"
+  ],
+  "extensionDependencies": ["openai.chatgpt"],
+  "contributes": {
+    "commands": [
+      {
+        "command": "codexMultiTabs.newChat",
+        "title": "New Chat Tab",
+        "category": "Codex Multi Tabs"
+      },
+      {
+        "command": "codexMultiTabs.newChatBeside",
+        "title": "New Chat to the Right",
+        "category": "Codex Multi Tabs",
+        "icon": "$(add)"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "codexMultiTabs.newChatBeside",
+        "key": "ctrl+alt+n",
+        "mac": "cmd+alt+n"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "codexMultiTabs.newChatBeside",
+          "when": "resourceScheme == openai-codex",
+          "group": "navigation@1"
+        }
+      ]
+    }
+  }
+}

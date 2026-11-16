@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "steps": [
+    {
+      "command": "codexMultiTabs.newChatBeside",
+      "codexEditorCount": 1,
+      "distinctEditorGroups": 1,
+      "distinctResources": 1
+    },
+    {
+      "command": "codexMultiTabs.newChatBeside",
+      "codexEditorCount": 2,
+      "distinctEditorGroups": 2,
+      "distinctResources": 2
+    },
+    {
+      "command": "codexMultiTabs.newChatBeside",
+      "codexEditorCount": 3,
+      "distinctEditorGroups": 3,
+      "distinctResources": 3
+    },
+    {
+      "command": "codexMultiTabs.newChatBeside",
+      "codexEditorCount": 4,
+      "distinctEditorGroups": 4,
+      "distinctResources": 4
+    }
+  ],
+  "officialVersion": "26.51111.21308",
+  "vscodeVersion": "1.146.0",
+  "resources": [
+    "openai-codex://route/extension/panel/new?n%3D38432362-f622-4422-a845-6ad8db59e995",
+    "openai-codex://route/extension/panel/new?n%3D7552c157-7968-450d-bcd5-88a797557674",
+    "openai-codex://route/extension/panel/new?n%3D014d1bfa-0cf6-4d3e-8547-0b1a99728dfa",
+    "openai-codex://route/extension/panel/new?n%3D67ac0929-bd64-4bcd-b157-12cd0c1d491a"
+  ],
+  "scope": "Real VS Code extension-host editor creation; no prompts or model turns"
+}
