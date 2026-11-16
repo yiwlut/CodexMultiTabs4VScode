@@ -1,2 +1,19 @@
-# CodexMultiTabs4VScode
-CodexMultiTabs for vscode, you can hit ' Ctrl alt n '
+# Codex Multi Tabs (Local)
+
+VS Code 한 창에서 Codex 대화 패널을 여러 개 열기 위한 개인용 보조 확장입니다.
+
+- `Ctrl + Alt + N`: 현재 편집기 오른쪽에 새 Codex 패널을 추가합니다.
+- Codex 편집기 상단의 `+` 버튼도 같은 동작을 합니다.
+- 명령 팔레트의 `Codex Multi Tabs: New Chat Tab`은 현재 편집기 그룹에 새 탭을 추가합니다.
+
+호출할 때마다 고유 URI로 공식 Codex 편집기를 엽니다. 공식 확장의 파일을 수정하지 않습니다.
+프롬프트 전송, 모델 실행, 자격 증명 읽기, 실행 권한 변경 기능은 없습니다.
+새 패널에서 사용자가 메시지를 보내면 Codex가 대화를 시작합니다.
+
+현재 설치된 `openai.chatgpt 26.51111.21308`의 편집기 경로를 확인해 작성했습니다.
+
+2026-11-16 통합 테스트: VS Code 1.146.0의 별도 테스트 프로필에서 실제 공식 Codex 확장과 함께 실행했습니다.
+명령을 네 번 호출해 Codex 편집기 4개, 서로 다른 편집기 그룹 4개, 고유 URI 4개를 확인했고 기존 편집기도 유지됐습니다.
+결과는 `test-result.json`, 실행 코드는 `test/run-integration.js`에 있습니다.
+
+이 테스트는 패널 생성과 배치를 확인합니다. 실제 키 입력과 모델의 동시 응답 실행은 테스트하지 않았습니다.
